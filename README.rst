@@ -1,7 +1,7 @@
 botocore
 ========
 
-This repository is a fork from [botocore](https://github.com/boto/botocore) meant to work with [Scaleway S3 Buckets](https://www.scaleway.com/fr/object-storage/)
+This repository is a fork from https://github.com/boto/botocore meant to work with Scaleway S3 Buckets.
 
 Getting Started
 ---------------
