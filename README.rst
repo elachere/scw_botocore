@@ -1,23 +1,7 @@
 botocore
 ========
 
-.. image:: https://secure.travis-ci.org/boto/botocore.png?branch=develop
-   :target: http://travis-ci.org/boto/botocore
-
-.. image:: https://codecov.io/github/boto/botocore/coverage.svg?branch=develop
-    :target: https://codecov.io/github/boto/botocore?branch=develop
-
-
-A low-level interface to a growing number of Amazon Web Services. The
-botocore package is the foundation for the
-`AWS CLI <https://github.com/aws/aws-cli>`__ as well as
-`boto3 <https://github.com/boto/boto3>`__.
-
-On 10/29/2020 deprecation for Python 3.4 and Python 3.5 was announced and support
-will be dropped on 02/01/2021. To avoid disruption, customers using Botocore
-on Python 3.4 or 3.5 may need to upgrade their version of Python or pin the
-version of Botocore in use prior to 02/01/2021. For more information, see
-this `blog post <https://aws.amazon.com/blogs/developer/announcing-the-end-of-support-for-python-3-4-and-3-5-in-the-aws-sdk-for-python-and-aws-cli-v1/>`__.
+This repository is a fork from [botocore](https://github.com/boto/botocore) meant to work with [Scaleway S3 Buckets](https://www.scaleway.com/fr/object-storage/)
 
 Getting Started
 ---------------
@@ -32,10 +16,6 @@ Assuming that you have Python and ``virtualenv`` installed, set up your environm
     $ . venv/bin/activate
     $ pip install -r requirements.txt
     $ pip install -e .
-
-.. code-block:: sh
-
-    $ pip install botocore
     
 Using Botocore
 ~~~~~~~~~~~~~~
@@ -66,32 +46,4 @@ Then, from a Python interpreter:
     >>> session = botocore.session.get_session()
     >>> client = session.create_client('ec2')
     >>> print(client.describe_instances())
-
-
-Getting Help
-------------
-
-We use GitHub issues for tracking bugs and feature requests and have limited
-bandwidth to address them. Please use these community resources for getting
-help. Please note many of the same resources available for ``boto3`` are
-applicable for ``botocore``:
-
-* Ask a question on `Stack Overflow <https://stackoverflow.com/>`__ and tag it with `boto3 <https://stackoverflow.com/questions/tagged/boto3>`__
-* Come join the AWS Python community chat on `gitter <https://gitter.im/boto/boto3>`__
-* Open a support ticket with `AWS Support <https://console.aws.amazon.com/support/home#/>`__
-* If it turns out that you may have found a bug, please `open an issue <https://github.com/boto/botocore/issues/new>`__
-
-
-Contributing
-------------
-
-We value feedback and contributions from our community. Whether it's a bug report, new feature, correction, or additional documentation, we welcome your issues and pull requests. Please read through this `CONTRIBUTING <https://github.com/boto/botocore/blob/develop/CONTRIBUTING.rst>`__ document before submitting any issues or pull requests to ensure we have all the necessary information to effectively respond to your contribution. 
-
-
-More Resources
---------------
-
-* `NOTICE <https://github.com/boto/botocore/blob/develop/NOTICE>`__
-* `Changelog <https://github.com/boto/botocore/blob/develop/CHANGELOG.rst>`__
-* `License <https://github.com/boto/botocore/blob/develop/LICENSE.txt>`__
 
